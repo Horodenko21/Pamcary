@@ -26,42 +26,32 @@ A API permitirá operações de CRUD (Create, Read, Update, Delete) e consulta p
   
 - **Frontend**:
   - Angular
-  - Bootstrap ou Material UI (opcional)
+  - Bootstrap ou Material UI
 
 ## Requisitos
 
 ### API (Backend)
 
-1. Criar uma API RESTful para o cadastro e gerenciamento de pessoas.
-2. Utilizar um banco de dados PostgreSQL.
-3. Implementar os seguintes endpoints:
-   - `POST /pessoas`: Criar uma nova pessoa
-   - `GET /pessoas`: Listar todas as pessoas
-   - `PUT /pessoas/:id`: Atualizar informações de uma pessoa
-   - `DELETE /pessoas/:id`: Deletar uma pessoa
-   - `GET /pessoas/cpf/:cpf`: Buscar uma pessoa pelo CPF
-4. Documentar os endpoints utilizando Swagger/OpenAPI.
-5. Garantir uma cobertura mínima de 60% com testes automatizados.
-6. Aplicar boas práticas de desenvolvimento, como SOLID e Clean Code.
+1. Criar uma API RESTful para o cadastro e gerenciamento de pessoas. (OK)
+2. Utilizar um banco de dados PostgreSQL. (OK)
+3. Implementar os seguintes endpoints: 
+   - `POST /pessoas`: Criar uma nova pessoa (OK)
+   - `GET /pessoas`: Listar todas as pessoas (OK)
+   - `PUT /pessoas/:id`: Atualizar informações de uma pessoa (OK)
+   - `DELETE /pessoas/:id`: Deletar uma pessoa (OK)
+   - `GET /pessoas/cpf/:cpf`: Buscar uma pessoa pelo CPF (OK)
+4. Documentar os endpoints utilizando Swagger/OpenAPI. (OK)
+5. Garantir uma cobertura mínima de 60% com testes automatizados. (OK)
+6. Aplicar boas práticas de desenvolvimento, como SOLID e Clean Code. (OK)
 
 ### Interface Web (Frontend)
 
-1. Criar uma interface responsiva utilizando Angular.
+1. Criar uma interface responsiva utilizando Angular. (OK)
 2. A interface deve permitir as seguintes funcionalidades:
-   - Cadastro de novas pessoas.
-   - Listagem das pessoas cadastradas.
-   - Atualização dos dados de uma pessoa.
-   - Exclusão de um cadastro.
-   - Busca de uma pessoa pelo CPF.
-3. Implementar um design limpo e intuitivo.
-4. Criar testes unitários para os componentes principais.
-
-## Como Rodar o Projeto Localmente
-
-### Backend (API)
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   - Cadastro de novas pessoas. (OK)
+   - Listagem das pessoas cadastradas. (OK)
+   - Atualização dos dados de uma pessoa. (OK)
+   - Exclusão de um cadastro. (OK)
+   - Busca de uma pessoa pelo CPF. (OK)
+3. Implementar um design limpo e intuitivo. (OK)
+4. Criar testes unitários para os componentes principais. (OK)
