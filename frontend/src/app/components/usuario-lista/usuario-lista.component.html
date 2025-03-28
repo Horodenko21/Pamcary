@@ -1,0 +1,39 @@
+<div class="card p-4">
+  <form class="mb-3 d-flex gap-2" (submit)="buscarPorCpf(); $event.preventDefault()">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Buscar por CPF"
+      [(ngModel)]="cpfBusca"
+      name="cpfBusca"
+    />
+    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+    <button class="btn btn-outline-secondary" type="button" (click)="buscarUsuarios()">Limpar</button>
+  </form>
+
+  <p *ngIf="erroBusca" class="text-danger">{{ erroBusca }}</p>
+
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>CPF</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.name }}</td>
+        <td>{{ usuario.email }}</td>
+        <td>{{ usuario.cpf }}</td>
+        <td>
+          <button class="btn btn-sm btn-warning me-2" (click)="editar(usuario)"><i class="bi bi-pencil-square me-1"></i>Editar</button>
+          <button class="btn btn-sm btn-danger" (click)="deletarUsuario(usuario.id!)"><i class="bi bi-trash me-1"></i>Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
